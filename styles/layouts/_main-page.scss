@@ -1,0 +1,56 @@
+@use '../abstracts/_abstracts-dir' as *;
+
+main {
+    .jumbotron {
+        height : 90vh;
+
+        .container {
+            @include displayFlex(row);
+            justify-content: center;
+            align-items : center;
+            height : 90vh;
+        }
+
+        @include sm {
+            padding : 16px;
+            .container {
+                @include displayFlex(column);
+            }
+        }
+    }
+
+    .content-waifu {
+        .container {
+            .waifu-wrapper {
+                @include displayFlex(row);
+                justify-content : space-evenly;
+                .waifu-item {
+                    width : 250px;
+                    .waifu-box {
+                        @include displayFlex(column);
+                        background-color : $light-gray;
+                        border-radius : 15px;
+
+                        img {
+                            height : 200px;
+                            width : 200px;
+                            border-radius : 15px;
+                            margin : 25px;
+                        }
+                    }
+                    transition : .6s;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+            @include sm {
+                .waifu-wrapper {
+                    flex-direction : column !important;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

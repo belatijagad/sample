@@ -1,0 +1,45 @@
+@use "sass:math";
+
+$directions : top, right, left, bottom;
+
+/*
+    Paddings and Margins
+*/
+
+@for $i from 1 through 6 {
+    .p-#{$i} {
+        padding :  8px * math.pow(2, $i - 1);
+    }
+    .m-#{$i} {
+        margin : 8px * math.pow(2, $i - 1);
+    }
+
+    .p-v-#{$i} {
+        padding-top : 8px * math.pow(2, $i - 1);
+        padding-bottom : 8px * math.pow(2, $i - 1);
+    }
+
+    .p-h-#{$i} {
+        padding-right : 8px * math.pow(2, $i - 1);
+        padding-left : 8px * math.pow(2, $i - 1);
+    }
+
+    .m-v-#{$i} {
+        margin-top : 8px * math.pow(2, $i - 1);
+        margin-bottom : 8px * math.pow(2, $i - 1);
+    }
+
+    .m-h-#{$i} {
+        margin-right : 8px * math.pow(2, $i - 1);
+        margin-left : 8px * math.pow(2, $i - 1);
+    }
+
+    @each $direction in $directions {
+        .p-#{$direction}-#{$i} {
+            padding :  8px * math.pow(2, $i - 1);
+        }
+        .m-#{$direction}-#{$i} {
+            margin : 8px * math.pow(2, $i - 1);
+        }
+    }
+}

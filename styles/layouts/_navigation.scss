@@ -1,0 +1,42 @@
+@use '../abstracts/_abstracts-dir' as *;
+
+nav {
+    background-color : $light-gray;
+    .container {
+        @include displayFlex(row);
+        justify-content : space-between;
+        align-items : center;
+
+        a {
+            text-decoration : none;
+        }
+
+        .navlink-sm-toggle {
+            display : none;
+        }
+        @include sm {
+            .navlink-lg {
+                display : none;
+            }
+            .navlink-sm-toggle {
+                display : block;
+                transition : .5s;
+                &-rotated {
+                    transform : rotate(90deg);
+                    transition : .5s;
+                }
+            }
+        }
+    }
+    @include sm {
+        .navlink-sm {
+            @include displayFlex(column);
+            align-items : flex-end;
+            background-color : $gray;
+
+            a {
+                text-decoration : none;
+            }
+        }
+    }
+}

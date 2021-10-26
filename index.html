@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Website</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="">
+            <div class="container">
+                <p class ="primary-font white p-2">LOGO</p>
+                <div class="navlink-lg">
+                    <a href="html/404.html" class="primary-font white p-h-2">About</a>
+                    <a href="html/404.html" class="primary-font white p-h-2">Projects</a>
+                    <a href="html/404.html" class="primary-font white p-h-2">Contact</a>
+                </div>
+                <div class="navlink-sm-toggle p-2" id="navlink-sm-toggle" onclick="navbarToggle()">
+                    <span style="font: 16px;">
+                        <i class="fas fa-bars white"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="navlink-sm display-none" id="navlink-sm">
+                <a href="html/404.html" class="primary-font white p-1">About</a>
+                <a href="html/404.html" class="primary-font white p-1">Projects</a>
+                <a href="html/404.html" class="primary-font white p-1">Contact</a>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Main content -->
+    <main>
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+            <div class="container">
+                <div class="w-50">
+                    <h1 class="primary-font blue m-v-3">Sample Page</h1>
+                    <p class="secondary-font white m-v-3 o-80">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Accusamus sunt illum, ipsa debitis quia nulla repellendus 
+                        maxime incidunt, laboriosam assumenda odio impedit, vel 
+                        deserunt. Amogusus.
+                    </p>
+                </div>
+                <div class="w-50">
+                    <div>
+                        <img src="src/waifu/amogusus.png" alt="" height="300px" width="auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main content of the page -->
+        <div class="content-waifu">
+            <div class="container p-v-4">
+                <h3 class="primary-font white text-center">My Favourites</h3>
+                <div class="waifu-wrapper m-v-3">
+                    <!-- Rin Nanakura -->
+                    <div class="waifu-item m-v-2">
+                        <div class="waifu-box">
+                            <img src="src/waifu/nanakura.png" alt="">
+                        </div>
+                        <h5 class="secondary-font white text-center medium m-1 o-70">Rin Nanakura</h5>
+                    </div>
+
+                    <!-- Himawari -->
+                    <div class="waifu-item m-v-2">
+                        <div class="waifu-box">
+                            <img src="src/waifu/himawari.png" alt="">
+                        </div>
+                        <h5 class="secondary-font white text-center medium m-1 o-70">Himawari</h5>
+                    </div>
+
+                    <!-- Keqing -->
+                    <div class="waifu-item m-v-2">
+                        <div class="waifu-box">
+                            <img src="src/waifu/keqing.png" alt="">
+                        </div>
+                        <h5 class="secondary-font white text-center medium m-1 o-70">Keqing</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="primary-font white p-v-3 medium text-center">© Belati Jagad Bintang Syuhada - 2021</p>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="scripts/main.js"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/d0abd30197.js"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

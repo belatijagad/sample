@@ -1,0 +1,21 @@
+@use '../abstracts/_abstracts-dir' as *;
+
+.container {
+    margin : 0 auto;
+
+    @include sm {
+        width : 100%;
+    }
+
+    @include md {
+        width : 480px;
+    }
+
+    @include lg {
+        width : 768px;
+    }
+
+    @include xl {
+        width : 1024px;
+    }
+}

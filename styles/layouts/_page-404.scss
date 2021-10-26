@@ -1,0 +1,12 @@
+@use '../abstracts/_abstracts-dir' as *;
+
+.page-404 {
+    @include displayFlex(column);
+    height : 100vh;
+    justify-content : center;
+    
+    .container {
+        @include displayFlex(column);
+        align-items : center;
+    }
+}
