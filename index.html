@@ -6,7 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Website</title>
+
+    <!-- Link CSS -->
     <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Link Icon-->
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -14,18 +19,27 @@
     <header>
         <nav class="">
             <div class="container">
+
+                <!-- Website logo-->
                 <p class ="primary-font white p-2">LOGO</p>
+
+                <!-- Navbar links on large screens -->
                 <div class="navlink-lg">
                     <a href="html/404.html" class="primary-font white p-h-2">About</a>
                     <a href="html/404.html" class="primary-font white p-h-2">Projects</a>
                     <a href="html/404.html" class="primary-font white p-h-2">Contact</a>
                 </div>
+
+                <!-- Navbar links toggle button on small screens -->
                 <div class="navlink-sm-toggle p-2" id="navlink-sm-toggle" onclick="navbarToggle()">
                     <span style="font: 16px;">
                         <i class="fas fa-bars white"></i>
                     </span>
                 </div>
+
             </div>
+
+            <!-- Navbar links on smaller screen (toggle) -->
             <div class="navlink-sm display-none" id="navlink-sm">
                 <a href="html/404.html" class="primary-font white p-1">About</a>
                 <a href="html/404.html" class="primary-font white p-1">Projects</a>
@@ -39,6 +53,8 @@
         <!-- Jumbotron -->
         <div class="jumbotron">
             <div class="container">
+
+                <!-- Website title and brief description -->
                 <div class="w-50">
                     <h1 class="primary-font blue m-v-3">Sample Page</h1>
                     <p class="secondary-font white m-v-3 o-80">
@@ -48,19 +64,27 @@
                         deserunt. Amogusus.
                     </p>
                 </div>
+
+                <!-- Eyecatching photo(?) -->
                 <div class="w-50">
                     <div>
                         <img src="src/waifu/amogusus.png" alt="" height="300px" width="auto">
                     </div>
                 </div>
+
             </div>
         </div>
 
         <!-- Main content of the page -->
+
+        <!-- Ignore this name please. -->
         <div class="content-waifu">
             <div class="container p-v-4">
                 <h3 class="primary-font white text-center">My Favourites</h3>
+
+                <!-- List wrapper -->
                 <div class="waifu-wrapper m-v-3">
+
                     <!-- Rin Nanakura -->
                     <div class="waifu-item m-v-2">
                         <div class="waifu-box">
@@ -84,9 +108,18 @@
                         </div>
                         <h5 class="secondary-font white text-center medium m-1 o-70">Keqing</h5>
                     </div>
+
                 </div>
             </div>
         </div>
+
+        <!-- Contacts -->
+        <div class="content-contact">
+            <div class="container p-v-4">
+                
+            </div>
+        </div>
+
     </main>
 
     <!-- Footer -->
